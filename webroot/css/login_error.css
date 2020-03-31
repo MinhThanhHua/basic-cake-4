@@ -1,0 +1,84 @@
+/* line 1, ../sass/login_error.scss */
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: 'japanFont';
+  font-style: normal;
+  src: local("japanFont"), url("./../font/NotoSerifJP-Regular.otf") format("woff2"); }
+/* line 10, ../sass/login_error.scss */
+body {
+  font-family: "japanFont" !important;
+  color: #222;
+  background: #fff; }
+
+/* line 16, ../sass/login_error.scss */
+.login-form {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 50px; }
+  /* line 22, ../sass/login_error.scss */
+  .login-form .title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold; }
+  /* line 27, ../sass/login_error.scss */
+  .login-form .form {
+    margin-top: 30px;
+    background-color: #D0CECE; }
+    /* line 30, ../sass/login_error.scss */
+    .login-form .form .form-input {
+      display: flex;
+      flex-direction: column;
+      padding: 15px 0px;
+      justify-content: center;
+      align-items: center; }
+      /* line 36, ../sass/login_error.scss */
+      .login-form .form .form-input .p-title {
+        color: #4472C4;
+        border: 1px solid #4472C4;
+        border-radius: 10px;
+        padding: 16px 10px;
+        background: #D8E2F3; }
+      /* line 43, ../sass/login_error.scss */
+      .login-form .form .form-input input {
+        width: calc(100% - 17%);
+        margin-top: 10px;
+        padding: 20px 15px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: none;
+        outline: none; }
+      /* line 52, ../sass/login_error.scss */
+      .login-form .form .form-input button {
+        margin-top: 10px;
+        border-radius: 7px;
+        background-color: #4472C4;
+        width: calc(100% - 50%);
+        border: none;
+        cursor: pointer; }
+        /* line 59, ../sass/login_error.scss */
+        .login-form .form .form-input button p {
+          font-size: 16px;
+          padding: 9px 20px;
+          color: #ffffff; }
+        /* line 64, ../sass/login_error.scss */
+        .login-form .form .form-input button :hover {
+          background-color: #124387;
+          border-radius: 7px; }
+      /* line 69, ../sass/login_error.scss */
+      .login-form .form .form-input p.error {
+        font-size: 18px;
+        color: red;
+        margin-top: 10px; }
+      /* line 75, ../sass/login_error.scss */
+      .login-form .form .form-input .user-err {
+        border: 1px solid red;
+        border-radius: 10px; }
+      /* line 79, ../sass/login_error.scss */
+      .login-form .form .form-input .pass-err {
+        border: 1px solid red;
+        border-radius: 10px; }

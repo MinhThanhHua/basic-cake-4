@@ -1,0 +1,116 @@
+.btn-disabled {
+    pointer-events: none;
+}
+
+.btn-hidden {
+    display: none;
+}
+
+p.error, p.success {
+    font-size: 18px;
+    color: red;
+    margin-top: 10px;
+}
+
+form ul.error {
+    font-size: 17px;
+    color: red;
+    margin: 5px;
+}
+
+.login-form .form .form-input p.error {
+    display: unset !important;
+}
+
+.select-disable {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+#create-account .table-content .table-common table.common tr.common td.common input {
+    height: 35px;
+}
+
+.user-list table {
+    margin-bottom: 0px;
+}
+
+/* Fix show space on */
+.table-space {
+    white-space: pre;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+}
+
+.break-text {
+    word-break: break-word;
+}
+
+.pagination-custom {
+    padding-top: 25px;
+}
+
+.clear-banner-img {
+    width: 74px;
+    height: 36px;
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+    padding: 5px 20px;
+    color: #Fff;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.clear-banner-img:hover {
+    background-color: #a12834
+}
+
+button#upload-file-banner:hover {
+    background-color: #D0CECE;
+    color: #000;
+}
+
+img#js-blah {
+    width: 108px;
+    height: 88px;
+}
+.banner-list .table-list-item table .resize-image img {
+    height: 100%;
+}
+.banner-confirm .table-content .table-common table.common tr.common td.common .resize-image img {
+    height: 100%;
+}
+.banner-detail .table-content .table-common table.common tr.common td.common .resize-image img {
+    height: 100%;
+}
+.store-list .form-search-ticket .list-select-user {
+    justify-content: center;
+}
+.store-list .table-list-item table {
+    margin-bottom: 0;
+}
+.cl-both {
+    clear: both;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.custom-agent-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.btn-disable {
+    pointer-events: none;
+    background-color: #AFABAB !important;
+    border: 1px solid #AFABAB !important;
+}
+
+.custom-img {
+    height: 100% !important;
+}

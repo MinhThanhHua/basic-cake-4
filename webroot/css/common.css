@@ -1,0 +1,1450 @@
+/* @group common */
+/* line 3, ../sass/common.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* line 9, ../sass/common.scss */
+body {
+  font-family: "Meiryo" !important;
+  color: #222;
+  background: #fff;
+  line-height: 1.5;
+  font-size: 16px !important; }
+
+/* line 17, ../sass/common.scss */
+p,
+ul,
+label {
+  margin-bottom: 0 !important; }
+
+/* line 23, ../sass/common.scss */
+.wrapper {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #7f7f7f;
+  margin-bottom: 20px; }
+
+/* line 32, ../sass/common.scss */
+button,
+table,
+td,
+th {
+  font-size: 16px !important;
+  font-family: "Meiryo" !important; }
+
+/* line 40, ../sass/common.scss */
+#container {
+  width: 100%;
+  box-sizing: border-box; }
+
+/* line 47, ../sass/common.scss */
+.box.datetime .form-control.datetimepicker-input,
+.box.box.datetime.custom .form-control.datetimepicker-input {
+  pointer-events: none; }
+
+@font-face {
+  font-family: 'japanFont';
+  font-style: normal;
+  src: local("japanFont"), url("./../font/NotoSerifJP-Medium.otf") format("woff2"); }
+/* line 58, ../sass/common.scss */
+.ml-10 {
+  margin-left: 10px !important; }
+
+/*============ Header =============*/
+/* line 64, ../sass/common.scss */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray; }
+  /* line 69, ../sass/common.scss */
+  .header .header-button {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-left: 10px; }
+    /* line 78, ../sass/common.scss */
+    .header .header-button p {
+      font-size: 16px;
+      padding: 3px 15px; }
+  /* line 83, ../sass/common.scss */
+  .header .header-title {
+    width: calc(100% - 30%);
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #ffffff;
+    text-align: center; }
+  /* line 91, ../sass/common.scss */
+  .header div.select-common {
+    width: 15%;
+    margin-right: 10px; }
+    /* line 94, ../sass/common.scss */
+    .header div.select-common .select-hidden {
+      display: none;
+      visibility: hidden;
+      padding-right: 10px; }
+    /* line 99, ../sass/common.scss */
+    .header div.select-common .select {
+      cursor: pointer;
+      position: relative;
+      color: #000000;
+      height: 30px;
+      width: 100%; }
+    /* line 106, ../sass/common.scss */
+    .header div.select-common .select-styled {
+      border-radius: 5px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #ffffff;
+      padding: 5px 10px; }
+      /* line 115, ../sass/common.scss */
+      .header div.select-common .select-styled p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 93%; }
+      /* line 121, ../sass/common.scss */
+      .header div.select-common .select-styled:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border: 7px solid transparent;
+        border-color: #000000 transparent transparent transparent;
+        position: absolute;
+        top: 12px;
+        right: 10px; }
+      /* line 131, ../sass/common.scss */
+      .header div.select-common .select-styled:hover {
+        background-color: #ffffff; }
+      /* line 134, ../sass/common.scss */
+      .header div.select-common .select-styled:active, .header div.select-common .select-styled.active {
+        background-color: #ffffff; }
+        /* line 137, ../sass/common.scss */
+        .header div.select-common .select-styled:active:after, .header div.select-common .select-styled.active:after {
+          top: 7px;
+          border-color: transparent transparent #000000 transparent; }
+    /* line 143, ../sass/common.scss */
+    .header div.select-common .select-options {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      z-index: 999;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background-color: #ffffff; }
+      /* line 154, ../sass/common.scss */
+      .header div.select-common .select-options li {
+        margin: 0;
+        padding: 2.5px 0;
+        text-indent: 15px;
+        border-top: 1px solid #e6e6e6; }
+        /* line 155, ../sass/common.scss */
+        .header div.select-common .select-options li:last-child {
+          border-bottom: 1px solid #e6e6e6; }
+        /* line 162, ../sass/common.scss */
+        .header div.select-common .select-options li:hover {
+          color: #ffffff;
+          background: gray !important; }
+
+/*============ End of Header =============*/
+/*============================
+	common menu
+============================*/
+/* line 176, ../sass/common.scss */
+.wrapper-content {
+  display: flex;
+  position: relative;
+  margin-top: 10px; }
+  /* line 180, ../sass/common.scss */
+  .wrapper-content article#menu {
+    width: 15%;
+    position: relative;
+    left: 0;
+    transition: 0.8s;
+    border: 1px solid #7f7f7f;
+    border-left: none;
+    min-height: 322px;
+    border-bottom: none; }
+    /* line 190, ../sass/common.scss */
+    .wrapper-content article#menu nav.navbar-menu .navbar-brand-left {
+      background-color: #5b9bd5;
+      color: #fff;
+      border-top: 1px solid #7f7f7f;
+      position: relative;
+      transition: 0.3s;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%; }
+      /* line 201, ../sass/common.scss */
+      .wrapper-content article#menu nav.navbar-menu .navbar-brand-left .js-navbar-toggler {
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        cursor: pointer;
+        transition: 0.5s;
+        height: 32px;
+        outline: none;
+        border: none;
+        border-right: 1px solid #afabab; }
+        /* line 211, ../sass/common.scss */
+        .wrapper-content article#menu nav.navbar-menu .navbar-brand-left .js-navbar-toggler .bar1 {
+          transform: rotate(-45deg) translate(-3px, 4px);
+          width: 24px;
+          height: 3px;
+          margin: 5.6px;
+          background-color: #5b9bd5; }
+        /* line 218, ../sass/common.scss */
+        .wrapper-content article#menu nav.navbar-menu .navbar-brand-left .js-navbar-toggler .bar2 {
+          display: none; }
+        /* line 221, ../sass/common.scss */
+        .wrapper-content article#menu nav.navbar-menu .navbar-brand-left .js-navbar-toggler .bar3 {
+          transform: rotate(45deg) translate(-2px, -3px);
+          width: 24px;
+          height: 3px;
+          margin: 5.6px;
+          background-color: #5b9bd5; }
+    /* line 230, ../sass/common.scss */
+    .wrapper-content article#menu nav.navbar-menu ul.navbar-nav {
+      width: 100%; }
+      /* line 232, ../sass/common.scss */
+      .wrapper-content article#menu nav.navbar-menu ul.navbar-nav li {
+        list-style-type: none;
+        border-top: 1px solid #7f7f7f; }
+        /* line 236, ../sass/common.scss */
+        .wrapper-content article#menu nav.navbar-menu ul.navbar-nav li:last-child {
+          border-bottom: 1px solid #7f7f7f; }
+        /* line 239, ../sass/common.scss */
+        .wrapper-content article#menu nav.navbar-menu ul.navbar-nav li a {
+          text-decoration: none;
+          color: #000;
+          padding: 3.5px 10px;
+          display: block; }
+          /* line 244, ../sass/common.scss */
+          .wrapper-content article#menu nav.navbar-menu ul.navbar-nav li a:hover {
+            background-color: #ccdfff; }
+        /* line 248, ../sass/common.scss */
+        .wrapper-content article#menu nav.navbar-menu ul.navbar-nav li a.active {
+          background-color: #DAE3F3; }
+  /* line 255, ../sass/common.scss */
+  .wrapper-content article#menu.active {
+    width: 150px;
+    left: -155px;
+    position: absolute;
+    transition: 0.5s;
+    border: 1px solid #7f7f7f; }
+    /* line 261, ../sass/common.scss */
+    .wrapper-content article#menu.active .js-navbar-toggler {
+      right: -48px !important;
+      transition: 0.5s;
+      z-index: 1;
+      padding: 0 !important;
+      top: -2px !important;
+      height: 33px !important; }
+      /* line 268, ../sass/common.scss */
+      .wrapper-content article#menu.active .js-navbar-toggler .bar1 {
+        transform: rotate(0deg) translate(0px, 2px) !important;
+        width: 24px;
+        height: 3px;
+        margin: 5.6px;
+        background-color: #5b9bd5;
+        transition: 1s; }
+      /* line 276, ../sass/common.scss */
+      .wrapper-content article#menu.active .js-navbar-toggler .bar2 {
+        display: block !important;
+        width: 24px;
+        height: 3px;
+        margin: 5.6px;
+        background-color: #5b9bd5; }
+      /* line 283, ../sass/common.scss */
+      .wrapper-content article#menu.active .js-navbar-toggler .bar3 {
+        transform: rotate(0deg) translate(0px, -2px) !important;
+        width: 24px;
+        height: 3px;
+        margin: 5.6px;
+        background-color: #5b9bd5;
+        transition: 1s; }
+  /* line 294, ../sass/common.scss */
+  .wrapper-content article.content {
+    width: calc(100% - 15% - 15px);
+    transition: 0.8s;
+    margin: 0 auto; }
+    /* line 299, ../sass/common.scss */
+    .wrapper-content article.content .breadcrumb-top {
+      background-color: #afabab;
+      height: 33px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      /* line 305, ../sass/common.scss */
+      .wrapper-content article.content .breadcrumb-top .breadcrumb-list {
+        padding: 0px 10px; }
+        /* line 307, ../sass/common.scss */
+        .wrapper-content article.content .breadcrumb-top .breadcrumb-list li {
+          display: inline-block;
+          list-style-type: none;
+          position: relative; }
+          /* line 312, ../sass/common.scss */
+          .wrapper-content article.content .breadcrumb-top .breadcrumb-list li:first-child::before {
+            content: ""; }
+          /* line 316, ../sass/common.scss */
+          .wrapper-content article.content .breadcrumb-top .breadcrumb-list li::before {
+            content: "/";
+            color: #fff; }
+          /* line 321, ../sass/common.scss */
+          .wrapper-content article.content .breadcrumb-top .breadcrumb-list li:last-child a {
+            color: #fff;
+            pointer-events: none; }
+          /* line 326, ../sass/common.scss */
+          .wrapper-content article.content .breadcrumb-top .breadcrumb-list li a {
+            color: #4472c4;
+            text-decoration: none;
+            font-weight: 400; }
+    /* line 334, ../sass/common.scss */
+    .wrapper-content article.content .breadcrumb-top.active {
+      padding-left: 50px; }
+    /* line 337, ../sass/common.scss */
+    .wrapper-content article.content p.search-ticket.active {
+      background-color: #d0cece;
+      margin: 10px 0;
+      padding: 7px 10px;
+      position: relative;
+      cursor: pointer; }
+      /* line 343, ../sass/common.scss */
+      .wrapper-content article.content p.search-ticket.active::after {
+        position: absolute;
+        content: "";
+        top: 15px;
+        right: 15px;
+        border: 10px solid transparent;
+        border-color: #000000 transparent transparent transparent; }
+    /* line 352, ../sass/common.scss */
+    .wrapper-content article.content p.search-ticket {
+      background-color: #d0cece;
+      margin: 10px 0;
+      padding: 7px 10px;
+      position: relative;
+      cursor: pointer; }
+      /* line 358, ../sass/common.scss */
+      .wrapper-content article.content p.search-ticket::after {
+        position: absolute;
+        content: "";
+        top: 5px;
+        right: 15px;
+        border: 10px solid transparent;
+        border-color: transparent transparent #000000 transparent; }
+    /* line 367, ../sass/common.scss */
+    .wrapper-content article.content .form-search-ticket {
+      border: 1px solid #7f7f7f;
+      margin-top: 5px; }
+      /* line 371, ../sass/common.scss */
+      .wrapper-content article.content .form-search-ticket form .box {
+        display: flex;
+        padding: 5px 0; }
+        /* line 373, ../sass/common.scss */
+        .wrapper-content article.content .form-search-ticket form .box:first-child {
+          padding-top: 10px; }
+        /* line 377, ../sass/common.scss */
+        .wrapper-content article.content .form-search-ticket form .box .box-label {
+          width: 20%;
+          padding-left: 20px; }
+        /* line 381, ../sass/common.scss */
+        .wrapper-content article.content .form-search-ticket form .box .box-input {
+          display: flex;
+          width: calc(100% - 20%); }
+          /* line 384, ../sass/common.scss */
+          .wrapper-content article.content .form-search-ticket form .box .box-input textarea#note {
+            width: calc(100% - 20px);
+            border-radius: 5px;
+            outline: none;
+            padding: 10px; }
+          /* line 390, ../sass/common.scss */
+          .wrapper-content article.content .form-search-ticket form .box .box-input input {
+            width: calc(100% - 20px);
+            border-radius: 4px;
+            border: 1px solid #7f7f7f;
+            padding: 7px;
+            font-size: 16px;
+            outline: none; }
+          /* line 398, ../sass/common.scss */
+          .wrapper-content article.content .form-search-ticket form .box .box-input .box-left {
+            width: 52%;
+            display: inline-block; }
+            /* line 401, ../sass/common.scss */
+            .wrapper-content article.content .form-search-ticket form .box .box-input .box-left div.select-common {
+              width: 64.012%;
+              border: 1px solid #7f7f7f;
+              border-radius: 4px; }
+              /* line 405, ../sass/common.scss */
+              .wrapper-content article.content .form-search-ticket form .box .box-input .box-left div.select-common .select-hidden {
+                display: none;
+                visibility: hidden;
+                padding-right: 10px; }
+              /* line 410, ../sass/common.scss */
+              .wrapper-content article.content .form-search-ticket form .box .box-input .box-left div.select-common .select {
+                cursor: pointer;
+                position: relative;
+                color: #000000;
+                height: 35px;
+                width: 100%; }
+              /* line 417, ../sass/common.scss */
+              .wrapper-content article.content .form-search-ticket form .box .box-input .box-left div.select-common .select-styled {
+                border-radius: 5px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: #ffffff;
+                padding: 5px 10px;
+                width: 92%; }
+                /* line 427, ../sass/common.scss */
+                .wrapper-content article.content .form-search-ticket form .box .box-input .box-left div.select-common .select-styled p {
+                  overflow: hidden; }
+                /* line 431, ../sass/common.scss */
+                .wrapper-content article.content .form-search-ticket form .box .box-input .box-left div.select-common .select-styled:after {
+                  content: "";
+                  width: 0;
+                  height: 0;
+                  border: 7px solid transparent;
+                  border-color: #000000 transparent transparent transparent;
+                  position: absolute;
+                  top: 14px;
+                  right: 8px; }
+                /* line 441, ../sass/common.scss */
+                .wrapper-content article.content .form-search-ticket form .box .box-input .box-left div.select-common .select-styled:hover {
+                  background-color: #ffffff; }
+                /* line 444, ../sass/common.scss */
+                .wrapper-content article.content .form-search-ticket form .box .box-input .box-left div.select-common .select-styled:active, .wrapper-content article.content .form-search-ticket form .box .box-input .box-left div.select-common .select-styled.active {
+                  background-color: #ffffff; }
+                  /* line 447, ../sass/common.scss */
+                  .wrapper-content article.content .form-search-ticket form .box .box-input .box-left div.select-common .select-styled:active:after, .wrapper-content article.content .form-search-ticket form .box .box-input .box-left div.select-common .select-styled.active:after {
+                    top: 7px;
+                    border-color: transparent transparent #000000 transparent; }
+              /* line 453, ../sass/common.scss */
+              .wrapper-content article.content .form-search-ticket form .box .box-input .box-left div.select-common .select-options {
+                display: none;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: 0;
+                z-index: 999;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                background-color: #ffffff;
+                border: 1px solid #7f7f7f; }
+                /* line 466, ../sass/common.scss */
+                .wrapper-content article.content .form-search-ticket form .box .box-input .box-left div.select-common .select-options li {
+                  margin: 0;
+                  padding: 10px;
+                  border-bottom: none; }
+                  /* line 470, ../sass/common.scss */
+                  .wrapper-content article.content .form-search-ticket form .box .box-input .box-left div.select-common .select-options li:hover {
+                    color: #ffffff;
+                    background: gray !important; }
+          /* line 478, ../sass/common.scss */
+          .wrapper-content article.content .form-search-ticket form .box .box-input .box-right {
+            width: calc(100% - 52%);
+            display: inline-block; }
+            /* line 481, ../sass/common.scss */
+            .wrapper-content article.content .form-search-ticket form .box .box-input .box-right div.box-share {
+              display: flex;
+              align-items: center; }
+              /* line 484, ../sass/common.scss */
+              .wrapper-content article.content .form-search-ticket form .box .box-input .box-right div.box-share p {
+                width: calc(100% - 55.725%); }
+              /* line 487, ../sass/common.scss */
+              .wrapper-content article.content .form-search-ticket form .box .box-input .box-right div.box-share div.select-common {
+                width: 100%;
+                border: 1px solid #7f7f7f;
+                border-radius: 4px; }
+                /* line 491, ../sass/common.scss */
+                .wrapper-content article.content .form-search-ticket form .box .box-input .box-right div.box-share div.select-common .select-hidden {
+                  display: none;
+                  visibility: hidden;
+                  padding-right: 10px; }
+                /* line 496, ../sass/common.scss */
+                .wrapper-content article.content .form-search-ticket form .box .box-input .box-right div.box-share div.select-common .select {
+                  cursor: pointer;
+                  position: relative;
+                  color: #000000;
+                  height: 35px;
+                  width: 100%; }
+                /* line 503, ../sass/common.scss */
+                .wrapper-content article.content .form-search-ticket form .box .box-input .box-right div.box-share div.select-common .select-styled {
+                  border-radius: 5px;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  left: 0;
+                  background-color: #ffffff;
+                  padding: 5px 10px; }
+                  /* line 512, ../sass/common.scss */
+                  .wrapper-content article.content .form-search-ticket form .box .box-input .box-right div.box-share div.select-common .select-styled:after {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border: 7px solid transparent;
+                    border-color: #000000 transparent transparent transparent;
+                    position: absolute;
+                    top: 14px;
+                    right: 10px; }
+                  /* line 522, ../sass/common.scss */
+                  .wrapper-content article.content .form-search-ticket form .box .box-input .box-right div.box-share div.select-common .select-styled:hover {
+                    background-color: #ffffff; }
+                  /* line 525, ../sass/common.scss */
+                  .wrapper-content article.content .form-search-ticket form .box .box-input .box-right div.box-share div.select-common .select-styled:active, .wrapper-content article.content .form-search-ticket form .box .box-input .box-right div.box-share div.select-common .select-styled.active {
+                    background-color: #ffffff; }
+                    /* line 528, ../sass/common.scss */
+                    .wrapper-content article.content .form-search-ticket form .box .box-input .box-right div.box-share div.select-common .select-styled:active:after, .wrapper-content article.content .form-search-ticket form .box .box-input .box-right div.box-share div.select-common .select-styled.active:after {
+                      top: 7px;
+                      border-color: transparent transparent #000000 transparent; }
+                /* line 535, ../sass/common.scss */
+                .wrapper-content article.content .form-search-ticket form .box .box-input .box-right div.box-share div.select-common .select-options {
+                  display: none;
+                  position: absolute;
+                  top: 100%;
+                  right: 0;
+                  left: 0;
+                  z-index: 999;
+                  margin: 0;
+                  padding: 0;
+                  list-style: none;
+                  background-color: #ffffff;
+                  border: 1px solid #7f7f7f; }
+                  /* line 547, ../sass/common.scss */
+                  .wrapper-content article.content .form-search-ticket form .box .box-input .box-right div.box-share div.select-common .select-options li {
+                    margin: 0;
+                    padding: 10px;
+                    border-bottom: none; }
+                    /* line 548, ../sass/common.scss */
+                    .wrapper-content article.content .form-search-ticket form .box .box-input .box-right div.box-share div.select-common .select-options li:last-child {
+                      border-bottom: 1px solid #7f7f7f; }
+                    /* line 554, ../sass/common.scss */
+                    .wrapper-content article.content .form-search-ticket form .box .box-input .box-right div.box-share div.select-common .select-options li:hover {
+                      color: #ffffff;
+                      background: gray !important; }
+      /* line 565, ../sass/common.scss */
+      .wrapper-content article.content .form-search-ticket form .box.flex {
+        display: flex; }
+      /* line 569, ../sass/common.scss */
+      .wrapper-content article.content .form-search-ticket form .box.box-custom .select-common {
+        width: 63.01% !important; }
+      /* line 573, ../sass/common.scss */
+      .wrapper-content article.content .form-search-ticket form .box-btn-search {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        /* line 577, ../sass/common.scss */
+        .wrapper-content article.content .form-search-ticket form .box-btn-search a {
+          border: 1px solid #7f7f7f;
+          color: #7f7f7f;
+          text-decoration: none;
+          border-radius: 5px;
+          padding: 5px 20px;
+          margin-bottom: 20px; }
+          /* line 578, ../sass/common.scss */
+          .wrapper-content article.content .form-search-ticket form .box-btn-search a:hover {
+            background-color: #afabab;
+            color: #fff; }
+      /* line 591, ../sass/common.scss */
+      .wrapper-content article.content .form-search-ticket form .box.select .box-input {
+        width: calc(100% - 20% - 20px); }
+      /* line 596, ../sass/common.scss */
+      .wrapper-content article.content .form-search-ticket form .box.select-2 .box-input {
+        width: calc(100% - 20% - 20px); }
+        /* line 599, ../sass/common.scss */
+        .wrapper-content article.content .form-search-ticket form .box.select-2 .box-input .box-left .header-select.js-header-select {
+          width: 56%; }
+        /* line 609, ../sass/common.scss */
+        .wrapper-content article.content .form-search-ticket form .box.select-2 .box-input .box-right .header-select.js-header-select {
+          width: 43.86%; }
+      /* line 615, ../sass/common.scss */
+      .wrapper-content article.content .form-search-ticket form .box.datetime {
+        display: flex; }
+        /* line 617, ../sass/common.scss */
+        .wrapper-content article.content .form-search-ticket form .box.datetime .box-label,
+        .wrapper-content article.content .form-search-ticket form .box.datetime .box-input {
+          display: block; }
+        /* line 621, ../sass/common.scss */
+        .wrapper-content article.content .form-search-ticket form .box.datetime .box-input {
+          width: calc(100% - 20% - 20px); }
+          /* line 623, ../sass/common.scss */
+          .wrapper-content article.content .form-search-ticket form .box.datetime .box-input .input-datetime {
+            display: flex;
+            justify-content: space-between; }
+            /* line 626, ../sass/common.scss */
+            .wrapper-content article.content .form-search-ticket form .box.datetime .box-input .input-datetime .input-group-append {
+              position: absolute;
+              top: 0px;
+              right: 0;
+              height: 100%;
+              width: auto;
+              border-radius: 5px;
+              z-index: 999; }
+              /* line 634, ../sass/common.scss */
+              .wrapper-content article.content .form-search-ticket form .box.datetime .box-input .input-datetime .input-group-append .input-group-text {
+                height: 100%; }
+            /* line 638, ../sass/common.scss */
+            .wrapper-content article.content .form-search-ticket form .box.datetime .box-input .input-datetime .box-left.calender {
+              width: 45%;
+              display: block; }
+            /* line 642, ../sass/common.scss */
+            .wrapper-content article.content .form-search-ticket form .box.datetime .box-input .input-datetime .box-center {
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+            /* line 647, ../sass/common.scss */
+            .wrapper-content article.content .form-search-ticket form .box.datetime .box-input .input-datetime .box-right.calender {
+              width: 45%;
+              display: block; }
+      /* line 655, ../sass/common.scss */
+      .wrapper-content article.content .form-search-ticket form .box.datetime.custom .box-label {
+        width: 37%; }
+      /* line 658, ../sass/common.scss */
+      .wrapper-content article.content .form-search-ticket form .box.datetime.custom .box-input {
+        width: calc(100% - 37% - 20px); }
+    /* line 666, ../sass/common.scss */
+    .wrapper-content article.content .form-search-ticket.custom-form .list-select-usee .box-left.box-only-select {
+      width: calc(100% - 20px); }
+      /* line 668, ../sass/common.scss */
+      .wrapper-content article.content .form-search-ticket.custom-form .list-select-usee .box-left.box-only-select .select-common {
+        width: 100%; }
+        /* line 670, ../sass/common.scss */
+        .wrapper-content article.content .form-search-ticket.custom-form .list-select-usee .box-left.box-only-select .select-common .select-styled {
+          width: 100% !important; }
+    /* line 676, ../sass/common.scss */
+    .wrapper-content article.content .form-search-ticket.custom-form .list-select-usee + .box.datetime + .box-btn-search {
+      margin-top: 15px; }
+    /* line 679, ../sass/common.scss */
+    .wrapper-content article.content .form-search-ticket.custom-form select.js-select2 {
+      width: 100%; }
+    /* line 682, ../sass/common.scss */
+    .wrapper-content article.content .form-search-ticket.custom-form span.select2-selection.select2-selection--single {
+      border: none;
+      outline: none;
+      height: 34px; }
+      /* line 686, ../sass/common.scss */
+      .wrapper-content article.content .form-search-ticket.custom-form span.select2-selection.select2-selection--single .select2-selection__rendered {
+        line-height: 34px; }
+    /* line 691, ../sass/common.scss */
+    .wrapper-content article.content .form-search-ticket.custom-form .select2-container .select2-selection--single .select2-selection__rendered {
+      padding-right: 23px; }
+    /* line 697, ../sass/common.scss */
+    .wrapper-content article.content .form-search-ticket.custom-form span.select2.select2-container.select2-container--default.select2-container--below.select2-container--focus span.select2-selection__arrow b,
+    .wrapper-content article.content .form-search-ticket.custom-form span.select2.select2-container.select2-container--default span.select2-selection__arrow b {
+      border-color: #000000 transparent transparent transparent;
+      border-width: 7px 7px 7px 7px;
+      margin-left: -10px;
+      margin-top: -1px; }
+    /* line 707, ../sass/common.scss */
+    .wrapper-content article.content .form-search-ticket.custom-form span.select2.select2-container.select2-container--default.select2-container--below.select2-container--open span.select2-selection__arrow b {
+      border-color: transparent transparent #000000 transparent;
+      border-width: 7px 7px 7px 7px;
+      margin-left: -10px;
+      margin-top: -8px; }
+    /* line 717, ../sass/common.scss */
+    .wrapper-content article.content .download-excell {
+      background-color: #70ad47;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: none;
+      float: right;
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      cursor: pointer; }
+      /* line 718, ../sass/common.scss */
+      .wrapper-content article.content .download-excell:hover {
+        background-color: #afabab; }
+  /* line 735, ../sass/common.scss */
+  .wrapper-content .form-search-ticket .select-styled {
+    width: 98% !important;
+    overflow: hidden; }
+    /* line 738, ../sass/common.scss */
+    .wrapper-content .form-search-ticket .select-styled p {
+      width: 96% !important;
+      margin-top: 1px; }
+  /* line 743, ../sass/common.scss */
+  .wrapper-content .form-search-ticket ul.select-options {
+    border: 1px solid #7f7f7f; }
+    /* line 745, ../sass/common.scss */
+    .wrapper-content .form-search-ticket ul.select-options li {
+      border: none !important; }
+
+/*============================
+	common modal
+============================*/
+/* line 755, ../sass/common.scss */
+.modal-content {
+  background-color: #e7e6e6 !important; }
+  /* line 757, ../sass/common.scss */
+  .modal-content .modal-header {
+    border-bottom: none !important; }
+    /* line 759, ../sass/common.scss */
+    .modal-content .modal-header button.close {
+      color: #005bff; }
+  /* line 763, ../sass/common.scss */
+  .modal-content .modal-body {
+    text-align: center;
+    font-weight: 700;
+    color: #767171;
+    margin: 20px 0 25px 0; }
+  /* line 769, ../sass/common.scss */
+  .modal-content .modal-footer {
+    border-top: none !important; }
+    /* line 771, ../sass/common.scss */
+    .modal-content .modal-footer .btn-modal {
+      cursor: pointer;
+      background-color: #e7e6e6;
+      border-color: #7f7f7f85;
+      border-radius: 5px;
+      color: #898989;
+      width: 110px; }
+      /* line 778, ../sass/common.scss */
+      .modal-content .modal-footer .btn-modal:hover {
+        background-color: #767171;
+        color: #ffffff; }
+
+/*============================
+	common format input datetimpicker
+============================*/
+/* line 790, ../sass/common.scss */
+.bootstrap-datetimepicker-widget table td.today {
+  font-weight: bold; }
+
+/* line 794, ../sass/common.scss */
+.bootstrap-datetimepicker-widget table td.day {
+  text-align: center; }
+  /* line 796, ../sass/common.scss */
+  .bootstrap-datetimepicker-widget table td.day:last-child {
+    color: #007bff !important; }
+  /* line 799, ../sass/common.scss */
+  .bootstrap-datetimepicker-widget table td.day:first-child {
+    color: red !important; }
+
+/* line 804, ../sass/common.scss */
+.bootstrap-datetimepicker-widget table td.active {
+  color: #fff !important; }
+
+/* line 810, ../sass/common.scss */
+.bootstrap-datetimepicker-widget table td.new:last-child, .bootstrap-datetimepicker-widget table td.new:first-child,
+.bootstrap-datetimepicker-widget table td.old:last-child,
+.bootstrap-datetimepicker-widget table td.old:first-child {
+  color: #6c757d !important; }
+
+/* line 817, ../sass/common.scss */
+.bootstrap-datetimepicker-widget .timepicker-hour,
+.bootstrap-datetimepicker-widget .timepicker-minute,
+.bootstrap-datetimepicker-widget .timepicker-second {
+  color: #000 !important; }
+
+/* line 825, ../sass/common.scss */
+.bootstrap-datetimepicker-widget table tr:first-child th {
+  border-radius: unset !important;
+  background-color: #007bff !important;
+  color: #fff; }
+/* line 833, ../sass/common.scss */
+.bootstrap-datetimepicker-widget table tr:last-child th:last-child {
+  color: #007bff !important; }
+/* line 836, ../sass/common.scss */
+.bootstrap-datetimepicker-widget table tr:last-child th:first-child {
+  color: red !important; }
+
+/* line 846, ../sass/common.scss */
+.bootstrap-datetimepicker-widget .timepicker-picker table tr td {
+  padding-left: 0 !important; }
+/* line 850, ../sass/common.scss */
+.bootstrap-datetimepicker-widget .timepicker-picker table tr td.separator:last-child {
+  display: none !important; }
+
+/* line 864, ../sass/common.scss */
+.datepicker-months .table-condensed thead span,
+.datepicker-years .table-condensed thead span,
+.datepicker-decades .table-condensed thead span {
+  color: #fff !important; }
+/* line 867, ../sass/common.scss */
+.datepicker-months .table-condensed thead tr,
+.datepicker-years .table-condensed thead tr,
+.datepicker-decades .table-condensed thead tr {
+  width: 100% !important; }
+  /* line 869, ../sass/common.scss */
+  .datepicker-months .table-condensed thead tr th,
+  .datepicker-years .table-condensed thead tr th,
+  .datepicker-decades .table-condensed thead tr th {
+    padding: 5px; }
+/* line 877, ../sass/common.scss */
+.datepicker-months .table-condensed tbody tr td .month,
+.datepicker-months .table-condensed tbody tr td .year,
+.datepicker-months .table-condensed tbody tr td span.decade,
+.datepicker-years .table-condensed tbody tr td .month,
+.datepicker-years .table-condensed tbody tr td .year,
+.datepicker-years .table-condensed tbody tr td span.decade,
+.datepicker-decades .table-condensed tbody tr td .month,
+.datepicker-decades .table-condensed tbody tr td .year,
+.datepicker-decades .table-condensed tbody tr td span.decade {
+  color: #000 !important; }
+/* line 882, ../sass/common.scss */
+.datepicker-months .table-condensed tbody tr td .month.active,
+.datepicker-months .table-condensed tbody tr td .year.active,
+.datepicker-months .table-condensed tbody tr td span.active,
+.datepicker-years .table-condensed tbody tr td .month.active,
+.datepicker-years .table-condensed tbody tr td .year.active,
+.datepicker-years .table-condensed tbody tr td span.active,
+.datepicker-decades .table-condensed tbody tr td .month.active,
+.datepicker-decades .table-condensed tbody tr td .year.active,
+.datepicker-decades .table-condensed tbody tr td span.active {
+  color: #fff !important; }
+/* line 889, ../sass/common.scss */
+.datepicker-months .table-condensed tbody tr td .decade:first-child, .datepicker-months .table-condensed tbody tr td .decade:last-child,
+.datepicker-months .table-condensed tbody tr td .year:first-child,
+.datepicker-months .table-condensed tbody tr td .year:last-child,
+.datepicker-years .table-condensed tbody tr td .decade:first-child,
+.datepicker-years .table-condensed tbody tr td .decade:last-child,
+.datepicker-years .table-condensed tbody tr td .year:first-child,
+.datepicker-years .table-condensed tbody tr td .year:last-child,
+.datepicker-decades .table-condensed tbody tr td .decade:first-child,
+.datepicker-decades .table-condensed tbody tr td .decade:last-child,
+.datepicker-decades .table-condensed tbody tr td .year:first-child,
+.datepicker-decades .table-condensed tbody tr td .year:last-child {
+  color: #6c757d !important; }
+
+/* line 900, ../sass/common.scss */
+.bootstrap-datetimepicker-widget .picker-switch td span {
+  border: 1px solid;
+  color: #007bff; }
+
+/* line 907, ../sass/common.scss */
+.timepicker.col-md-6 tr td {
+  color: #000000 !important; }
+
+/* line 917, ../sass/common.scss */
+.content-definition-list .form-search-ticket form,
+.content.banner-list .form-search-ticket form {
+  display: flex;
+  margin-top: 10px; }
+  /* line 920, ../sass/common.scss */
+  .content-definition-list .form-search-ticket form .box.box-edit,
+  .content.banner-list .form-search-ticket form .box.box-edit {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 !important;
+    width: calc(100% / 3 - 0px); }
+    /* line 926, ../sass/common.scss */
+    .content-definition-list .form-search-ticket form .box.box-edit .box-label.box-label-edit,
+    .content.banner-list .form-search-ticket form .box.box-edit .box-label.box-label-edit {
+      width: 50% !important;
+      text-align: center !important;
+      padding-left: 0px !important;
+      padding-bottom: 5px; }
+    /* line 932, ../sass/common.scss */
+    .content-definition-list .form-search-ticket form .box.box-edit .box-input.box-input-edit,
+    .content.banner-list .form-search-ticket form .box.box-edit .box-input.box-input-edit {
+      width: 100%;
+      margin-left: 0px !important;
+      justify-content: center; }
+      /* line 936, ../sass/common.scss */
+      .content-definition-list .form-search-ticket form .box.box-edit .box-input.box-input-edit .box-left,
+      .content.banner-list .form-search-ticket form .box.box-edit .box-input.box-input-edit .box-left {
+        width: 50% !important; }
+        /* line 938, ../sass/common.scss */
+        .content-definition-list .form-search-ticket form .box.box-edit .box-input.box-input-edit .box-left input.id_ticket,
+        .content.banner-list .form-search-ticket form .box.box-edit .box-input.box-input-edit .box-left input.id_ticket {
+          width: 100%; }
+        /* line 941, ../sass/common.scss */
+        .content-definition-list .form-search-ticket form .box.box-edit .box-input.box-input-edit .box-left .select-common,
+        .content.banner-list .form-search-ticket form .box.box-edit .box-input.box-input-edit .box-left .select-common {
+          width: 100% !important; }
+          /* line 943, ../sass/common.scss */
+          .content-definition-list .form-search-ticket form .box.box-edit .box-input.box-input-edit .box-left .select-common .select,
+          .content.banner-list .form-search-ticket form .box.box-edit .box-input.box-input-edit .box-left .select-common .select {
+            height: 34px; }
+        /* line 948, ../sass/common.scss */
+        .content-definition-list .form-search-ticket form .box.box-edit .box-input.box-input-edit .box-left .input-group.date .input-group-append,
+        .content.banner-list .form-search-ticket form .box.box-edit .box-input.box-input-edit .box-left .input-group.date .input-group-append {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          z-index: 999; }
+/* line 960, ../sass/common.scss */
+.content-definition-list .form-search-ticket .box-btn-search,
+.content.banner-list .form-search-ticket .box-btn-search {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; }
+  /* line 964, ../sass/common.scss */
+  .content-definition-list .form-search-ticket .box-btn-search a,
+  .content.banner-list .form-search-ticket .box-btn-search a {
+    color: #7F7F7F;
+    border: 1px solid #7F7F7F;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    text-decoration: none; }
+    /* line 965, ../sass/common.scss */
+    .content-definition-list .form-search-ticket .box-btn-search a:hover,
+    .content.banner-list .form-search-ticket .box-btn-search a:hover {
+      background-color: #afabab;
+      color: #fff; }
+
+/* line 986, ../sass/common.scss */
+.content.banner-list .form-search-ticket form .box.box-edit .box-input.box-input-edit .box-left {
+  width: 65% !important; }
+/* line 996, ../sass/common.scss */
+.content.banner-list .table-list-item .dataTables_scrollHead table {
+  margin-bottom: 0; }
+  /* line 998, ../sass/common.scss */
+  .content.banner-list .table-list-item .dataTables_scrollHead table th {
+    font-weight: 400; }
+/* line 1005, ../sass/common.scss */
+.content.banner-list .table-list-item .dataTables_scrollBody table td, .content.banner-list .table-list-item .dataTables_scrollBody table th {
+  vertical-align: middle; }
+
+/* line 1014, ../sass/common.scss */
+.wrapper-content.company-detail div#dtHorizontalVerticalExample_wrapper,
+.wrapper-content.company-detail div#dtHorizontalVerticalExample1_wrapper {
+  border: 1px solid #5B9BD5;
+  overflow: hidden;
+  padding: 10px; }
+  /* line 1019, ../sass/common.scss */
+  .wrapper-content.company-detail div#dtHorizontalVerticalExample_wrapper div#dtHorizontalVerticalExample_paginate,
+  .wrapper-content.company-detail div#dtHorizontalVerticalExample1_wrapper div#dtHorizontalVerticalExample_paginate {
+    display: none; }
+  /* line 1024, ../sass/common.scss */
+  .wrapper-content.company-detail div#dtHorizontalVerticalExample_wrapper tbody tr th,
+  .wrapper-content.company-detail div#dtHorizontalVerticalExample1_wrapper tbody tr th {
+    color: #000000; }
+  /* line 1028, ../sass/common.scss */
+  .wrapper-content.company-detail div#dtHorizontalVerticalExample_wrapper tbody tr td a,
+  .wrapper-content.company-detail div#dtHorizontalVerticalExample1_wrapper tbody tr td a {
+    color: #0563C1;
+    text-decoration: underline; }
+/* line 1039, ../sass/common.scss */
+.wrapper-content.company-detail div#dtHorizontalVerticalExample1_wrapper .row:first-child, .wrapper-content.company-detail div#dtHorizontalVerticalExample1_wrapper .row:last-child {
+  display: none; }
+
+/* line 1052, ../sass/common.scss */
+.wrapper-content.banner-management .table-content table tr.common td.common a {
+  color: #212529; }
+/* line 1056, ../sass/common.scss */
+.wrapper-content.banner-management .table-content table tr.common td.common .box-image .resize-image {
+  display: flex;
+  justify-content: center; }
+  /* line 1059, ../sass/common.scss */
+  .wrapper-content.banner-management .table-content table tr.common td.common .box-image .resize-image img {
+    width: 100%;
+    height: auto;
+    max-width: 108px; }
+/* line 1066, ../sass/common.scss */
+.wrapper-content.banner-management .table-content table tr.common td.common .box-image .box-title-image .box-choose-image {
+  display: flex;
+  overflow: hidden; }
+  /* line 1069, ../sass/common.scss */
+  .wrapper-content.banner-management .table-content table tr.common td.common .box-image .box-title-image .box-choose-image .box-choose-file {
+    position: relative;
+    width: 148px;
+    height: 36px; }
+    /* line 1073, ../sass/common.scss */
+    .wrapper-content.banner-management .table-content table tr.common td.common .box-image .box-title-image .box-choose-image .box-choose-file button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer; }
+    /* line 1079, ../sass/common.scss */
+    .wrapper-content.banner-management .table-content table tr.common td.common .box-image .box-title-image .box-choose-image .box-choose-file input#js-uploadfile {
+      position: absolute;
+      top: 0;
+      left: -86px;
+      padding: 0;
+      width: 233px !important;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer; }
+/* line 1102, ../sass/common.scss */
+.wrapper-content.banner-management div#dtHorizontalVerticalExample_wrapper tbody tr td p a {
+  color: #212529; }
+/* line 1112, ../sass/common.scss */
+.wrapper-content.banner-management .form-search-ticket.custom-form .box.box-edit {
+  width: calc(100% / 4 - 0px) !important; }
+/* line 1118, ../sass/common.scss */
+.wrapper-content.banner-management .form-search-ticket .input-group.date input.datetimepicker-input {
+  pointer-events: none; }
+/* line 1122, ../sass/common.scss */
+.wrapper-content.banner-management .form-search-ticket .select-styled {
+  width: 100% !important;
+  overflow: hidden; }
+
+/* line 1131, ../sass/common.scss */
+.wrapper-content.merchant-list .form-search-ticket .list-select-user {
+  justify-content: center; }
+
+/* line 1140, ../sass/common.scss */
+.wrapper-content.merchant-create .table-common tr td.common .button-left {
+  margin: 0; }
+/* line 1143, ../sass/common.scss */
+.wrapper-content.merchant-create .table-common tr td.common .box-timework {
+  display: flex;
+  align-items: center; }
+  /* line 1146, ../sass/common.scss */
+  .wrapper-content.merchant-create .table-common tr td.common .box-timework div#startworktime2,
+  .wrapper-content.merchant-create .table-common tr td.common .box-timework div#startworktime1 {
+    width: 20%; }
+    /* line 1149, ../sass/common.scss */
+    .wrapper-content.merchant-create .table-common tr td.common .box-timework div#startworktime2 .input-group-append,
+    .wrapper-content.merchant-create .table-common tr td.common .box-timework div#startworktime1 .input-group-append {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 999; }
+  /* line 1158, ../sass/common.scss */
+  .wrapper-content.merchant-create .table-common tr td.common .box-timework p {
+    margin: 0 20px; }
+  /* line 1161, ../sass/common.scss */
+  .wrapper-content.merchant-create .table-common tr td.common .box-timework input.form-control.datetimepicker-input {
+    pointer-events: none; }
+/* line 1166, ../sass/common.scss */
+.wrapper-content.merchant-create .table-common tr td.common .box-image .resize-image {
+  display: flex;
+  justify-content: center; }
+  /* line 1169, ../sass/common.scss */
+  .wrapper-content.merchant-create .table-common tr td.common .box-image .resize-image img {
+    width: 100%;
+    height: auto;
+    max-width: 108px; }
+/* line 1176, ../sass/common.scss */
+.wrapper-content.merchant-create .table-common tr td.common .box-image .box-title-image .box-choose-image {
+  display: flex;
+  overflow: hidden; }
+  /* line 1179, ../sass/common.scss */
+  .wrapper-content.merchant-create .table-common tr td.common .box-image .box-title-image .box-choose-image .box-choose-file {
+    position: relative;
+    width: 148px;
+    height: 36px; }
+    /* line 1183, ../sass/common.scss */
+    .wrapper-content.merchant-create .table-common tr td.common .box-image .box-title-image .box-choose-image .box-choose-file button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer; }
+    /* line 1189, ../sass/common.scss */
+    .wrapper-content.merchant-create .table-common tr td.common .box-image .box-title-image .box-choose-image .box-choose-file input#js-uploadfile {
+      position: absolute;
+      top: 0;
+      left: -86px;
+      padding: 0;
+      width: 233px !important;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer; }
+
+/* line 1211, ../sass/common.scss */
+.wrapper-content.merchant-create.edit .table-common tr td a {
+  color: #0563C1;
+  text-decoration: underline; }
+/* line 1217, ../sass/common.scss */
+.wrapper-content.merchant-create.edit .table-common tr td .td-list-input input.input-2 {
+  margin-left: 0px !important; }
+/* line 1220, ../sass/common.scss */
+.wrapper-content.merchant-create.edit .table-common tr td .td-list-input p.p-input-2 {
+  margin: 0 20px !important; }
+/* line 1223, ../sass/common.scss */
+.wrapper-content.merchant-create.edit .table-common tr td .td-list-input input.input-2 + p {
+  margin-left: 20px; }
+
+/* line 1231, ../sass/common.scss */
+.wrapper-content.merchant-detail .table-common tr td .box-qr {
+  display: flex;
+  align-items: center; }
+  /* line 1234, ../sass/common.scss */
+  .wrapper-content.merchant-detail .table-common tr td .box-qr .resize-image {
+    height: 108px !important; }
+  /* line 1238, ../sass/common.scss */
+  .wrapper-content.merchant-detail .table-common tr td .box-qr .download-qr {
+    background-color: #4472C4;
+    color: #fff;
+    border-radius: 8px;
+    height: 35px;
+    width: 135px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    text-decoration: none; }
+    /* line 1251, ../sass/common.scss */
+    .wrapper-content.merchant-detail .table-common tr td .box-qr .download-qr:hover {
+      background-color: #124387; }
+/* line 1257, ../sass/common.scss */
+.wrapper-content.merchant-detail .table-common tr td a {
+  color: #0563C1;
+  text-decoration: underline; }
+
+/* line 1268, ../sass/common.scss */
+.wrapper-content.confirm .table-common tr td a,
+.wrapper-content.merchant-edit .table-common tr td a {
+  color: #0563C1;
+  text-decoration: underline; }
+
+/* line 1280, ../sass/common.scss */
+.wrapper-content.receipt .table-common tr td .box-timework div#datepicker1 {
+  width: 40%; }
+  /* line 1282, ../sass/common.scss */
+  .wrapper-content.receipt .table-common tr td .box-timework div#datepicker1 .input-group-append {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 999; }
+  /* line 1289, ../sass/common.scss */
+  .wrapper-content.receipt .table-common tr td .box-timework div#datepicker1 input.form-control.datetimepicker-input {
+    pointer-events: none; }
+/* line 1294, ../sass/common.scss */
+.wrapper-content.receipt .table-common tr td .box-text-select {
+  display: flex;
+  align-items: center; }
+  /* line 1297, ../sass/common.scss */
+  .wrapper-content.receipt .table-common tr td .box-text-select .select-common {
+    width: 150px;
+    margin: 0 20px; }
+
+/* line 1307, ../sass/common.scss */
+.wrapper-content.receipt-list .item-display {
+  justify-content: space-between;
+  margin-bottom: 20px; }
+  /* line 1310, ../sass/common.scss */
+  .wrapper-content.receipt-list .item-display .box-select-list {
+    display: flex;
+    align-items: center;
+    width: 300px; }
+    /* line 1314, ../sass/common.scss */
+    .wrapper-content.receipt-list .item-display .box-select-list .select-common {
+      width: 45% !important; }
+  /* line 1318, ../sass/common.scss */
+  .wrapper-content.receipt-list .item-display .box-action {
+    display: flex;
+    align-items: center; }
+    /* line 1321, ../sass/common.scss */
+    .wrapper-content.receipt-list .item-display .box-action .btn-top-right {
+      margin-top: 0;
+      margin-bottom: 0; }
+    /* line 1325, ../sass/common.scss */
+    .wrapper-content.receipt-list .item-display .box-action .download-excel {
+      border-radius: 5px;
+      padding: 4.5px 13px;
+      color: #fff;
+      background-color: #70AD47;
+      border: 1px solid #70AD47;
+      margin-right: 20px;
+      cursor: pointer; }
+      /* line 1333, ../sass/common.scss */
+      .wrapper-content.receipt-list .item-display .box-action .download-excel:hover {
+        background-color: #3b7a3d; }
+/* line 1340, ../sass/common.scss */
+.wrapper-content.receipt-list table tbody tr td.td-list-button button.button-list.disable {
+  background-color: #AFABAB !important;
+  pointer-events: none; }
+/* line 1348, ../sass/common.scss */
+.wrapper-content.receipt-list .form-search-ticket.custom-form .box.box-edit .box-left .select-common.select-custom {
+  width: 238px !important; }
+/* line 1356, ../sass/common.scss */
+.wrapper-content.receipt-list label.table-list-item .dataTables_scrollHead table {
+  margin-bottom: 0 !important; }
+
+/* line 1363, ../sass/common.scss */
+table.common.fix {
+  margin: -2px 10px -2px 10px !important; }
+
+/* line 1366, ../sass/common.scss */
+table.common.add-record {
+  margin-bottom: 0 !important; }
+
+/* line 1372, ../sass/common.scss */
+.wrapper-content.member-list .dataTables_scrollHead .dataTables_scrollHeadInner table.table.table-striped.table-bordered.table-sm.dataTable.no-footer {
+  margin-bottom: 0 !important; }
+/* line 1378, ../sass/common.scss */
+.wrapper-content.member-list .dataTables_scrollBody table#dtHorizontalVerticalExample td, .wrapper-content.member-list .dataTables_scrollBody table#dtHorizontalVerticalExample th, .wrapper-content.member-list .dataTables_scrollBody #dtHorizontalVerticalExample1 td, .wrapper-content.member-list .dataTables_scrollBody #dtHorizontalVerticalExample1 th {
+  vertical-align: middle !important; }
+/* line 1386, ../sass/common.scss */
+.wrapper-content.member-list .form-search-ticket.custom-form .box.box-edit .box-left .select-common.select-custom {
+  width: 238px !important; }
+/* line 1391, ../sass/common.scss */
+.wrapper-content.member-list .form-search-ticket.custom-form .select-styled {
+  width: 100% !important;
+  overflow: hidden;
+  padding: 7px 10px !important; }
+/* line 1398, ../sass/common.scss */
+.wrapper-content.member-list .box-total-record p.total-record {
+  display: inline-block;
+  margin-left: 10px; }
+
+/* line 1408, ../sass/common.scss */
+.wrapper-content.merchant-list.member-list .form-search-ticket.custom-form .list-select-item .select-common.select-custom {
+  width: 238px !important; }
+
+/* line 1415, ../sass/common.scss */
+.select-options {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  max-height: 200px;
+  overflow-y: auto; }
+
+/* line 1424, ../sass/common.scss */
+label.table-list-item table th,
+label.table-list-item table td {
+  max-width: 300px !important; }
+/* line 1431, ../sass/common.scss */
+label.table-list-item table tbody th p,
+label.table-list-item table tbody td p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-variant-east-asian: proportional-width;
+  overflow: hidden; }
+/* line 1446, ../sass/common.scss */
+label.table-list-item table#dtHorizontalVerticalExample tbody tr td .icon-sort i.fas.fa-sort-up {
+  position: relative;
+  cursor: pointer; }
+  /* line 1449, ../sass/common.scss */
+  label.table-list-item table#dtHorizontalVerticalExample tbody tr td .icon-sort i.fas.fa-sort-up::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -15px;
+    font-size: 23px; }
+/* line 1457, ../sass/common.scss */
+label.table-list-item table#dtHorizontalVerticalExample tbody tr td .icon-sort i.fas.fa-sort-down {
+  position: relative;
+  cursor: pointer; }
+  /* line 1460, ../sass/common.scss */
+  label.table-list-item table#dtHorizontalVerticalExample tbody tr td .icon-sort i.fas.fa-sort-down::before {
+    position: absolute;
+    top: -21px;
+    left: 0;
+    font-size: 23px; }
+
+/* line 1474, ../sass/common.scss */
+.pagination-custom {
+  padding-top: 25px; }
+
+/* line 1479, ../sass/common.scss */
+.table-content.custom-table span.select2-selection.select2-selection--single {
+  height: 34px;
+  outline: none;
+  border: none; }
+/* line 1484, ../sass/common.scss */
+.table-content.custom-table span.select2-selection__arrow {
+  display: none; }
+/* line 1487, ../sass/common.scss */
+.table-content.custom-table span.select2-selection__rendered {
+  line-height: 32px !important; }
+/* line 1490, ../sass/common.scss */
+.table-content.custom-table .select2-container .select2-selection--single .select2-selection__rendered {
+  padding-right: 23px; }
+/* line 1494, ../sass/common.scss */
+.table-content.custom-table tr.common.custom-img .resize-image {
+  display: flex;
+  justify-content: center; }
+  /* line 1497, ../sass/common.scss */
+  .table-content.custom-table tr.common.custom-img .resize-image img {
+    width: 100%;
+    height: auto;
+    max-width: 108px; }
+/* line 1504, ../sass/common.scss */
+.table-content.custom-table tr.common.custom-img .box-title-image .box-choose-image {
+  display: flex;
+  overflow: hidden; }
+  /* line 1507, ../sass/common.scss */
+  .table-content.custom-table tr.common.custom-img .box-title-image .box-choose-image .box-choose-file {
+    position: relative; }
+    /* line 1509, ../sass/common.scss */
+    .table-content.custom-table tr.common.custom-img .box-title-image .box-choose-image .box-choose-file input {
+      position: absolute;
+      top: 0;
+      left: -93px;
+      height: 36px;
+      width: 241px;
+      opacity: 0;
+      cursor: pointer; }
+
+/* line 1524, ../sass/common.scss */
+.select2-container--open .select2-dropdown--below {
+  border: 1px solid #7f7f7f !important; }
+
+/* line 1528, ../sass/common.scss */
+input.select2-search__field {
+  height: 34px;
+  font-size: 16px !important; }
+
+/* line 1535, ../sass/common.scss */
+.form-search-ticket.custom-form.custom-form-center .box.box-edit .box-label.box-label-edit {
+  width: 50% !important; }
+/* line 1538, ../sass/common.scss */
+.form-search-ticket.custom-form.custom-form-center .box.box-edit .box-input.box-input-edit {
+  width: calc(100% - 33% + 10px) !important; }
+
+/* line 1547, ../sass/common.scss */
+.form-search-ticket.custom-form .box-input.box-input-edit .box-left .input-group.date {
+  min-width: 205px; }
+
+/* line 1556, ../sass/common.scss */
+#custom_Table .table-list-item div#dtHorizontalVerticalExample_wrapper {
+  position: relative; }
+  /* line 1557, ../sass/common.scss */
+  #custom_Table .table-list-item div#dtHorizontalVerticalExample_wrapper .dataTables_scroll {
+    width: 100%;
+    min-height: 106px; }
+  /* line 1562, ../sass/common.scss */
+  #custom_Table .table-list-item div#dtHorizontalVerticalExample_wrapper .dataTables_scrollBody {
+    overflow: unset !important; }
+  /* line 1565, ../sass/common.scss */
+  #custom_Table .table-list-item div#dtHorizontalVerticalExample_wrapper .dataTables_scrollFoot {
+    position: absolute;
+    width: 1901px !important;
+    top: 55px; }
+    /* line 1569, ../sass/common.scss */
+    #custom_Table .table-list-item div#dtHorizontalVerticalExample_wrapper .dataTables_scrollFoot table.table.table-striped.table-bordered.table-sm.shop-management-time.date-time.dataTable {
+      background-color: rgba(0, 0, 0, 0.05); }
+      /* line 1572, ../sass/common.scss */
+      #custom_Table .table-list-item div#dtHorizontalVerticalExample_wrapper .dataTables_scrollFoot table.table.table-striped.table-bordered.table-sm.shop-management-time.date-time.dataTable tr th {
+        height: 44px;
+        vertical-align: middle; }
+/* line 1586, ../sass/common.scss */
+#custom_Table table#dtHorizontalVerticalExample tbody tr td textarea.shop-input {
+  max-height: 250px;
+  min-height: 38px; }
+/* line 1594, ../sass/common.scss */
+#custom_Table td.dataTables_empty {
+  display: none; }
+/* line 1599, ../sass/common.scss */
+#custom_Table tbody tr th, #custom_Table tbody tr td {
+  vertical-align: middle; }
+
+/* line 1606, ../sass/common.scss */
+div#banner {
+  overflow: unset; }
+
+/* line 1611, ../sass/common.scss */
+div#banner_list input.id_ticket,
+div#banner_list .select-common {
+  min-width: 205px !important; }
+@media (max-width: 1290px) {
+  /* line 1616, ../sass/common.scss */
+  div#banner_list .form-search-ticket.custom-form .box.box-edit {
+    width: calc(100% / 4 - 8px) !important; } }
+
+/* line 1623, ../sass/common.scss */
+.wrapper-content.shop-management.js-shop textarea.shop-input {
+  height: 38px;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-left: 5px; }
+
+/* line 1633, ../sass/common.scss */
+article.content .select-common .select-styled {
+  overflow: hidden; }
+  /* line 1635, ../sass/common.scss */
+  article.content .select-common .select-styled p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 98%; }
+/* line 1642, ../sass/common.scss */
+article.content .select-common ul.select-options {
+  z-index: 9999 !important; }
+  /* line 1644, ../sass/common.scss */
+  article.content .select-common ul.select-options li {
+    text-indent: unset !important;
+    padding: 10px !important; }
+
+/* line 1655, ../sass/common.scss */
+.table-content.custom-table-content div#dtHorizontalVerticalExample_wrapper table tr th p,
+.table-content.custom-table-content div#dtHorizontalVerticalExample_wrapper table tr td {
+  padding: 13px 10px; }
+
+/* line 1664, ../sass/common.scss */
+div#js-panel .box-left.box-only-select {
+  width: 100%; }
+  /* line 1666, ../sass/common.scss */
+  div#js-panel .box-left.box-only-select .select-common {
+    width: calc(100% - 20px); }
+
+/* line 1672, ../sass/common.scss */
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+  white-space: unset !important;
+  width: 98% !important; }
+
+/* line 1682, ../sass/common.scss */
+table#dtHorizontalVerticalExample tbody tr th,
+#dtHorizontalVerticalExample1 tbody tr th,
+#dtHorizontalVerticalExample_wrapper tbody tr th {
+  color: #212529 !important; }
+/* line 1687, ../sass/common.scss */
+table#dtHorizontalVerticalExample tbody tr th .bootstrap-datetimepicker-widget table thead tr:first-child th,
+table#dtHorizontalVerticalExample tbody tr td .bootstrap-datetimepicker-widget table thead tr:first-child th,
+#dtHorizontalVerticalExample1 tbody tr th .bootstrap-datetimepicker-widget table thead tr:first-child th,
+#dtHorizontalVerticalExample1 tbody tr td .bootstrap-datetimepicker-widget table thead tr:first-child th,
+#dtHorizontalVerticalExample_wrapper tbody tr th .bootstrap-datetimepicker-widget table thead tr:first-child th,
+#dtHorizontalVerticalExample_wrapper tbody tr td .bootstrap-datetimepicker-widget table thead tr:first-child th {
+  color: #fff !important; }
+
+/* line 1698, ../sass/common.scss */
+div#banner div#custom_Table table#dtHorizontalVerticalExample thead tr th {
+  font-weight: 400; }
+/* line 1705, ../sass/common.scss */
+div#banner div#custom_Table table#dtHorizontalVerticalExample tbody tr th p.error,
+div#banner div#custom_Table table#dtHorizontalVerticalExample tbody tr td p.error {
+  -webkit-line-clamp: unset; }
+
+/* line 1715, ../sass/common.scss */
+table.dataTable thead,
+th.shop.sorting_asc,
+th.shop.sorting {
+  cursor: initial !important; }
+  /* line 1720, ../sass/common.scss */
+  table.dataTable thead .icon-sort i.fas.fa-sort-up,
+  table.dataTable thead .icon-sort i.fas.fa-sort-down,
+  th.shop.sorting_asc .icon-sort i.fas.fa-sort-up,
+  th.shop.sorting_asc .icon-sort i.fas.fa-sort-down,
+  th.shop.sorting .icon-sort i.fas.fa-sort-up,
+  th.shop.sorting .icon-sort i.fas.fa-sort-down {
+    cursor: pointer; }
+
+/* line 1728, ../sass/common.scss */
+#js-ticket-actual .wrapper1 {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 20px; }
+/* line 1729, ../sass/common.scss */
+#js-ticket-actual .scroll-x {
+  height: 20px; }
+/* line 1730, ../sass/common.scss */
+#js-ticket-actual .table#dtHorizontalVerticalExample {
+  overflow: none; }
+/* line 1734, ../sass/common.scss */
+#js-ticket-actual .dataTables_scrollBody table#dtHorizontalVerticalExample tbody tr p, #js-ticket-actual .dataTables_scrollBody table#dtHorizontalVerticalExample tbody th p {
+  font-size: 12px; }

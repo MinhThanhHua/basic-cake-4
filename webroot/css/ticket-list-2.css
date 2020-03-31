@@ -1,0 +1,451 @@
+/* line 3, ../sass/ticket-list-2.scss */
+#dtHorizontalVerticalExample_wrapper .row:first-child {
+  display: none; }
+/* line 6, ../sass/ticket-list-2.scss */
+#dtHorizontalVerticalExample_wrapper .row .dataTables_info {
+  display: none; }
+/* line 10, ../sass/ticket-list-2.scss */
+#dtHorizontalVerticalExample_wrapper .row .dataTables_paginate.paging_simple_numbers .pagination {
+  display: none; }
+
+/* line 18, ../sass/ticket-list-2.scss */
+#dtHorizontalVerticalExample_length label {
+  margin-left: 10px; }
+  /* line 20, ../sass/ticket-list-2.scss */
+  #dtHorizontalVerticalExample_length label select.custom-select.custom-select-sm.form-control.form-control-sm {
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 7px 40px;
+    border: 1px solid black; }
+
+/* line 29, ../sass/ticket-list-2.scss */
+.item-display {
+  display: flex;
+  align-items: center;
+  margin-top: 17px;
+  margin-left: 10px;
+  margin-bottom: 10px; }
+  /* line 35, ../sass/ticket-list-2.scss */
+  .item-display div.select-common {
+    width: 8%;
+    border: 1px solid #7F7F7F;
+    border-radius: 4px;
+    margin-left: 10px; }
+    /* line 40, ../sass/ticket-list-2.scss */
+    .item-display div.select-common .select-hidden {
+      display: none;
+      visibility: hidden;
+      padding-right: 10px; }
+    /* line 45, ../sass/ticket-list-2.scss */
+    .item-display div.select-common .select {
+      cursor: pointer;
+      position: relative;
+      color: #000000;
+      height: 35px;
+      width: 100%; }
+    /* line 52, ../sass/ticket-list-2.scss */
+    .item-display div.select-common .select-styled {
+      border-radius: 5px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #ffffff;
+      padding: 5px 10px; }
+      /* line 61, ../sass/ticket-list-2.scss */
+      .item-display div.select-common .select-styled:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border: 7px solid transparent;
+        border-color: #000000 transparent transparent transparent;
+        position: absolute;
+        top: 14px;
+        right: 10px; }
+      /* line 71, ../sass/ticket-list-2.scss */
+      .item-display div.select-common .select-styled:hover {
+        background-color: #ffffff; }
+      /* line 74, ../sass/ticket-list-2.scss */
+      .item-display div.select-common .select-styled:active, .item-display div.select-common .select-styled.active {
+        background-color: #ffffff; }
+        /* line 76, ../sass/ticket-list-2.scss */
+        .item-display div.select-common .select-styled:active:after, .item-display div.select-common .select-styled.active:after {
+          top: 7px;
+          border-color: transparent transparent #000000 transparent; }
+    /* line 82, ../sass/ticket-list-2.scss */
+    .item-display div.select-common .select-options {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      z-index: 999;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background-color: #ffffff; }
+      /* line 93, ../sass/ticket-list-2.scss */
+      .item-display div.select-common .select-options li {
+        margin: 0;
+        padding: 10px 0;
+        text-indent: 15px;
+        border: 1px solid #7F7F7F;
+        border-bottom: none; }
+        /* line 94, ../sass/ticket-list-2.scss */
+        .item-display div.select-common .select-options li:last-child {
+          border-bottom: 1px solid #7F7F7F; }
+        /* line 102, ../sass/ticket-list-2.scss */
+        .item-display div.select-common .select-options li:hover {
+          color: #ffffff;
+          background: gray !important; }
+
+/* line 111, ../sass/ticket-list-2.scss */
+.table-list-item {
+  width: 100%;
+  margin-top: 10px; }
+  /* line 114, ../sass/ticket-list-2.scss */
+  .table-list-item table, .table-list-item th, .table-list-item td {
+    text-align: center;
+    font-size: 16px !important; }
+  /* line 118, ../sass/ticket-list-2.scss */
+  .table-list-item tr:nth-child(odd) {
+    background-color: #d1d3ff; }
+  /* line 121, ../sass/ticket-list-2.scss */
+  .table-list-item tr:nth-child(even) {
+    background-color: #ebf0f7; }
+  /* line 124, ../sass/ticket-list-2.scss */
+  .table-list-item table {
+    width: 100%; }
+    /* line 128, ../sass/ticket-list-2.scss */
+    .table-list-item table tr th {
+      color: #ffffff;
+      border: 1px solid #fff; }
+      /* line 131, ../sass/ticket-list-2.scss */
+      .table-list-item table tr th::before {
+        color: #ffffff !important; }
+      /* line 135, ../sass/ticket-list-2.scss */
+      .table-list-item table tr th::before, .table-list-item table tr th::after {
+        left: 50%;
+        transform: translateX(-50%); }
+      /* line 141, ../sass/ticket-list-2.scss */
+      .table-list-item table tr th:last-child::before, .table-list-item table tr th:last-child::after {
+        display: none !important; }
+      /* line 146, ../sass/ticket-list-2.scss */
+      .table-list-item table tr th .sort-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px 28px 0; }
+        /* line 152, ../sass/ticket-list-2.scss */
+        .table-list-item table tr th .sort-icon span {
+          height: 4px;
+          cursor: pointer; }
+      /* line 157, ../sass/ticket-list-2.scss */
+      .table-list-item table tr th p {
+        text-align: center;
+        padding: 30px 10px;
+        width: 100%; }
+    /* line 164, ../sass/ticket-list-2.scss */
+    .table-list-item table tr td:last-child {
+      min-width: 250px; }
+    /* line 167, ../sass/ticket-list-2.scss */
+    .table-list-item table tr td .button-list {
+      background-color: #3c9e33;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 3px; }
+      /* line 173, ../sass/ticket-list-2.scss */
+      .table-list-item table tr td .button-list p {
+        color: #ffffff;
+        padding: 8px 20px; }
+      /* line 177, ../sass/ticket-list-2.scss */
+      .table-list-item table tr td .button-list :hover {
+        background-color: #3b7a3d;
+        border-radius: 5px; }
+    /* line 182, ../sass/ticket-list-2.scss */
+    .table-list-item table tr td .list-btn-2 {
+      background: #4472C4 !important; }
+      /* line 184, ../sass/ticket-list-2.scss */
+      .table-list-item table tr td .list-btn-2 :hover {
+        background-color: #124387;
+        border-radius: 5px; }
+    /* line 189, ../sass/ticket-list-2.scss */
+    .table-list-item table tr td .list-btn-3 {
+      background-color: #FF0000 !important; }
+      /* line 192, ../sass/ticket-list-2.scss */
+      .table-list-item table tr td .list-btn-3 :hover {
+        background-color: #a12834;
+        border-radius: 5px; }
+    /* line 197, ../sass/ticket-list-2.scss */
+    .table-list-item table tr td .list-btn-4 {
+      background-color: #FFC000 !important; }
+      /* line 199, ../sass/ticket-list-2.scss */
+      .table-list-item table tr td .list-btn-4 :hover {
+        background-color: #a9ab29;
+        border-radius: 5px; }
+    /* line 208, ../sass/ticket-list-2.scss */
+    .table-list-item table thead tr th {
+      position: relative;
+      background-color: #3266ad;
+      border: 1px solid #fff; }
+      /* line 211, ../sass/ticket-list-2.scss */
+      .table-list-item table thead tr th::after, .table-list-item table thead tr th::before {
+        display: none !important; }
+      /* line 217, ../sass/ticket-list-2.scss */
+      .table-list-item table thead tr th:first-child {
+        position: -webkit-sticky;
+        position: sticky;
+        left: -1px;
+        z-index: 9; }
+      /* line 223, ../sass/ticket-list-2.scss */
+      .table-list-item table thead tr th div.icon-sort {
+        position: absolute;
+        bottom: 22px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 35px; }
+        /* line 230, ../sass/ticket-list-2.scss */
+        .table-list-item table thead tr th div.icon-sort i {
+          height: 5px; }
+    /* line 239, ../sass/ticket-list-2.scss */
+    .table-list-item table tbody tr td {
+      border: 1px solid #ffffff;
+      padding: 30px 10px; }
+      /* line 242, ../sass/ticket-list-2.scss */
+      .table-list-item table tbody tr td p {
+        word-break: break-word;
+        width: 100%; }
+    /* line 248, ../sass/ticket-list-2.scss */
+    .table-list-item table tbody tr.odd {
+      background-color: #CFD5EA !important; }
+      /* line 250, ../sass/ticket-list-2.scss */
+      .table-list-item table tbody tr.odd:hover td, .table-list-item table tbody tr.odd:hover th {
+        background-color: #baccdc !important; }
+      /* line 254, ../sass/ticket-list-2.scss */
+      .table-list-item table tbody tr.odd th {
+        background-color: #CFD5EA !important;
+        color: #222222 !important;
+        font-weight: 300; }
+    /* line 261, ../sass/ticket-list-2.scss */
+    .table-list-item table tbody tr.even {
+      background-color: #E9EBF5 !important; }
+      /* line 263, ../sass/ticket-list-2.scss */
+      .table-list-item table tbody tr.even:hover td, .table-list-item table tbody tr.even:hover th {
+        background-color: #baccdc !important; }
+      /* line 267, ../sass/ticket-list-2.scss */
+      .table-list-item table tbody tr.even th {
+        background-color: #E9EBF5 !important;
+        color: #222222 !important;
+        font-weight: 300; }
+    /* line 277, ../sass/ticket-list-2.scss */
+    .table-list-item table tr > :first-child {
+      position: -webkit-sticky;
+      position: sticky;
+      left: -1px; }
+  /* line 283, ../sass/ticket-list-2.scss */
+  .table-list-item .pagination-list {
+    text-align: center;
+    margin-bottom: 30px; }
+    /* line 287, ../sass/ticket-list-2.scss */
+    .table-list-item .pagination-list ul li {
+      display: inline-block;
+      list-style-type: none; }
+      /* line 290, ../sass/ticket-list-2.scss */
+      .table-list-item .pagination-list ul li a {
+        text-decoration: none;
+        padding: 5px 10px;
+        border: 1px solid #7F7F7F;
+        border-radius: 5px;
+        color: #000;
+        font-weight: 400; }
+        /* line 291, ../sass/ticket-list-2.scss */
+        .table-list-item .pagination-list ul li a:active, .table-list-item .pagination-list ul li a:hover {
+          background-color: #4472C4;
+          color: #fff; }
+      /* line 306, ../sass/ticket-list-2.scss */
+      .table-list-item .pagination-list ul li:first-child a, .table-list-item .pagination-list ul li:last-child a {
+        border: none; }
+      /* line 310, ../sass/ticket-list-2.scss */
+      .table-list-item .pagination-list ul li a.active {
+        background-color: #4472C4;
+        color: #ffffff; }
+
+/* line 319, ../sass/ticket-list-2.scss */
+.wrapper-content article.content p.search-ticket::after {
+  display: none !important; }
+
+/* line 322, ../sass/ticket-list-2.scss */
+.wrapper-content article.content .form-search-ticket form .box-edit {
+  padding-bottom: 10px;
+  align-items: center; }
+
+/* line 326, ../sass/ticket-list-2.scss */
+.wrapper-content article.content .form-search-ticket form .box .box-label-edit {
+  width: 56.5% !important;
+  text-align: right !important; }
+
+/* line 330, ../sass/ticket-list-2.scss */
+.wrapper-content article.content .form-search-ticket form .box .box-input-edit {
+  margin-left: 27px; }
+
+/* line 333, ../sass/ticket-list-2.scss */
+.btn-top-right {
+  color: #969696;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #969696;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  cursor: pointer; }
+  /* line 343, ../sass/ticket-list-2.scss */
+  .btn-top-right :hover {
+    background-color: #969696;
+    color: #ffffff !important; }
+  /* line 347, ../sass/ticket-list-2.scss */
+  .btn-top-right p {
+    padding: 5px 15px;
+    line-height: 20px; }
+
+/* line 353, ../sass/ticket-list-2.scss */
+.list-select-user {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+  /* line 358, ../sass/ticket-list-2.scss */
+  .list-select-user .list-select-item {
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    /* line 364, ../sass/ticket-list-2.scss */
+    .list-select-user .list-select-item div.select-common {
+      margin-top: 10px;
+      width: 50%;
+      border: 1px solid #7f7f7f;
+      border-radius: 5px; }
+      /* line 369, ../sass/ticket-list-2.scss */
+      .list-select-user .list-select-item div.select-common .select-hidden {
+        display: none;
+        visibility: hidden;
+        padding-right: 10px; }
+      /* line 374, ../sass/ticket-list-2.scss */
+      .list-select-user .list-select-item div.select-common .select {
+        cursor: pointer;
+        position: relative;
+        color: #000000;
+        height: 35px;
+        width: 100%; }
+      /* line 381, ../sass/ticket-list-2.scss */
+      .list-select-user .list-select-item div.select-common .select-styled {
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #ffffff;
+        padding: 5px 10px; }
+        /* line 390, ../sass/ticket-list-2.scss */
+        .list-select-user .list-select-item div.select-common .select-styled:after {
+          content: "";
+          width: 0;
+          height: 0;
+          border: 7px solid transparent;
+          border-color: #000000 transparent transparent transparent;
+          position: absolute;
+          top: 14px;
+          right: 10px; }
+        /* line 400, ../sass/ticket-list-2.scss */
+        .list-select-user .list-select-item div.select-common .select-styled:hover {
+          background-color: #ffffff; }
+        /* line 403, ../sass/ticket-list-2.scss */
+        .list-select-user .list-select-item div.select-common .select-styled:active, .list-select-user .list-select-item div.select-common .select-styled.active {
+          background-color: #ffffff; }
+          /* line 406, ../sass/ticket-list-2.scss */
+          .list-select-user .list-select-item div.select-common .select-styled:active:after, .list-select-user .list-select-item div.select-common .select-styled.active:after {
+            top: 7px;
+            border-color: transparent transparent #000000 transparent; }
+      /* line 413, ../sass/ticket-list-2.scss */
+      .list-select-user .list-select-item div.select-common .select-options {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 999;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: #ffffff; }
+        /* line 424, ../sass/ticket-list-2.scss */
+        .list-select-user .list-select-item div.select-common .select-options li {
+          margin: 0;
+          padding: 10px;
+          border: 1px solid #7f7f7f;
+          border-bottom: none; }
+          /* line 425, ../sass/ticket-list-2.scss */
+          .list-select-user .list-select-item div.select-common .select-options li:last-child {
+            border-bottom: 1px solid #7f7f7f; }
+          /* line 432, ../sass/ticket-list-2.scss */
+          .list-select-user .list-select-item div.select-common .select-options li:hover {
+            color: #ffffff;
+            background: gray !important; }
+
+/* line 441, ../sass/ticket-list-2.scss */
+.list-input-user {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+  /* line 446, ../sass/ticket-list-2.scss */
+  .list-input-user .list-input-item {
+    margin-top: 10px;
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    /* line 453, ../sass/ticket-list-2.scss */
+    .list-input-user .list-input-item .input-user {
+      width: 50%;
+      margin-top: 10px; }
+      /* line 456, ../sass/ticket-list-2.scss */
+      .list-input-user .list-input-item .input-user input {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #7f7f7f;
+        padding: 7.5px;
+        font-size: 16px; }
+
+/* line 467, ../sass/ticket-list-2.scss */
+a.user-management-mail p {
+  color: #000000 !important; }
+
+/* line 471, ../sass/ticket-list-2.scss */
+.mt-3 {
+  margin-top: 3px; }
+
+/* line 474, ../sass/ticket-list-2.scss */
+.wrapper-content article.content .form-search-ticket {
+  margin-top: 0 !important; }
+
+/* line 477, ../sass/ticket-list-2.scss */
+.wrapper-content article.content p.search-ticket {
+  border: 1px solid #7f7f7f;
+  border-bottom: none !important; }
+
+/* line 481, ../sass/ticket-list-2.scss */
+.ml-10 {
+  margin-left: 10px; }
+
+/* line 484, ../sass/ticket-list-2.scss */
+.table td, .table th {
+  vertical-align: middle !important; }
